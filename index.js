@@ -9,7 +9,7 @@ module.exports = {
     'plugin:prettier/recommended'
   ],
   overrides: [],
-  plugins: ['prettier'],
+  plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
