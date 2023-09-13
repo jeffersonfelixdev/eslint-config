@@ -4,17 +4,16 @@ module.exports = {
     node: true
   },
   extends: [
-    'standard-with-typescript',
+    'standard',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended'
   ],
-  overrides: [],
-  plugins: ['@typescript-eslint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
+  plugins: ['@typescript-eslint'],
   rules: {
     'prettier/prettier': [
       'error',
