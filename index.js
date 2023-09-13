@@ -3,9 +3,14 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ['standard-with-typescript', 'plugin:prettier/recommended'],
+  extends: [
+    'standard-with-typescript',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended'
+  ],
   overrides: [],
   plugins: ['prettier'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
@@ -22,5 +27,10 @@ module.exports = {
         semi: false,
       },
     ],
-  }
+  },
+  settings: {
+    'import/parsers': {
+      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+    },
+  },
 }
