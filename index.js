@@ -13,8 +13,16 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['eslint-plugin-import-helpers', '@typescript-eslint'],
   rules: {
+    'import-helpers/order-imports': [
+      'warn',
+      {
+        newlinesBetween: 'always',
+        groups: ['module', '/^@/', ['parent', 'sibling', 'index']],
+        alphabetize: { 'order': 'asc', 'ignoreCase': true }
+      }
+    ],
     'prettier/prettier': [
       'error',
       {
