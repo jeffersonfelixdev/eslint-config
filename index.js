@@ -15,6 +15,12 @@ module.exports = {
   },
   plugins: ['eslint-plugin-import-helpers', '@typescript-eslint'],
   rules: {
+    '@typescript-eslint/no-unused-vars': [
+      'warn',
+      {
+        argsIgnorePattern: '_'
+      }
+    ],
     'import-helpers/order-imports': [
       'warn',
       {
