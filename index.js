@@ -21,6 +21,8 @@ module.exports = {
         allow: ['info', 'warn', 'error', 'table', 'trace']
       }
     ],
+    'no-useless-constructor': 'off',
+    'no-use-before-define': 'off',
     '@typescript-eslint/no-unused-vars': [
       'warn',
       {
