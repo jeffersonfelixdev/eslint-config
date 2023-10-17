@@ -23,6 +23,7 @@ module.exports = {
     ],
     'no-useless-constructor': 'off',
     'no-use-before-define': 'off',
+    'lines-between-class-members': 'warn',
     '@typescript-eslint/no-unused-vars': [
       'warn',
       {
