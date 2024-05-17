@@ -15,12 +15,7 @@ module.exports = {
   },
   plugins: ['eslint-plugin-import-helpers', '@typescript-eslint'],
   rules: {
-    'no-console': [
-      'warn',
-      {
-        allow: ['info', 'warn', 'error', 'table', 'trace']
-      }
-    ],
+    'no-console': ['warn'],
     'no-useless-constructor': 'off',
     'no-use-before-define': 'off',
     'lines-between-class-members': ['error', 'always'],

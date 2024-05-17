@@ -1,6 +1,6 @@
 {
   "name": "@jsfelix/eslint-config",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "private": false,
   "description": "ESLint configuration for projects",
   "main": "index.js",
@@ -19,8 +19,8 @@
   "author": "Jefferson Felix",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.0.0",
